@@ -11,6 +11,8 @@ Laboratory.create(name: 'Amgen')
 Laboratory.create(name: 'Sanofi-Aventis')
 
 Pharmacy.create(name: 'Pharmacie de la Grande Rue', city: 'Lyon')
+Pharmacy.create(name: 'Pharmacie Perrache', city: 'Lyon')
+Pharmacy.create(name: 'Pharmacie Villerbanne', city: 'Lyon')
 Pharmacy.create(name: 'Farmacity', city: 'Marseille')
 Pharmacy.create(name: 'La Pharmacie Populaire', city: 'Montpellier')
 Pharmacy.create(name: 'La Pharmacie Familliale', city: 'Grenoble')
