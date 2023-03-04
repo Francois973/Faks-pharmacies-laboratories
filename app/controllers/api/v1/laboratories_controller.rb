@@ -3,7 +3,6 @@ module Api
     class LaboratoriesController < ApplicationController
       def index
         @laboratories = Laboratory.all
-        ap @laboratories
         render json: @laboratories
       end
     end
