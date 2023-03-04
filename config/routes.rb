@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :orders, only: :create
       resources :sales, only: :create
       resources :products, only: :show
+      get '/classment/:id', to: 'laboratories#city_classment'
     end
   end
 end

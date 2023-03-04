@@ -36,6 +36,5 @@ class OrderTest < ActiveSupport::TestCase
                              average_price: 5)
     order = Order.create(pharmacy_id: grande_rue.id, laboratory_id: pfizer_laboratory.id, product_id: doliprane.id,
                          price: 4, quantity: 6)
-    ap order
   end
 end
