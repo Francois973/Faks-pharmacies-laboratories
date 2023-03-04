@@ -12,5 +12,16 @@ class LaboratoryProduct < ApplicationRecord
   def notify_pharmacy_laboratory
     return unless laboratory.products
     return unless quantity >= 5
+
+    notify_pharmacy
+    notify_laboratory
+  end
+
+  def notify_pharmacy
+    puts 'New command need to be prepare'
+  end
+
+  def notify_laboratory
+    puts 'New command need to be prepare'
   end
 end
