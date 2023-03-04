@@ -6,6 +6,6 @@ class Laboratory < ApplicationRecord
   validates :name, presence: true
 
   def most_succes_city_from_laboratory
-    orders.group_by(&:pharmacy).sort_by { |group| group[1].count }.map { |city| city[0].name }
+    orders.group_by(&:pharmacy).sort_by { |group| group[1].count }.map { |city| city[0].city }
   end
 end
