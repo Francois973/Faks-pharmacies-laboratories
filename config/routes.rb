@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :pharmacies, only: :show, param: :city
       resources :orders, only: :create
       resources :sales, only: :create
+      resources :products, only: :show
     end
   end
 end

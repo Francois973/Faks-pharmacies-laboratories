@@ -1,3 +1,4 @@
+Sale.destroy_all
 PharmacyProduct.destroy_all
 Order.destroy_all
 LaboratoryProduct.destroy_all
@@ -25,11 +26,19 @@ Pharmacy.create(name: 'MédiMarket', city: 'Londres')
 
 doliprane = Product.create(name: 'Doliprane')
 fervex = Product.create(name: 'fervex')
+comprimes = Product.create(name: 'comprimés')
 
 LaboratoryProduct.create(product_id: doliprane.id, laboratory_id: pfizer.id, quantity: rand(100), production_cost: 2,
                          average_price: 5)
+LaboratoryProduct.create(product_id: comprimes.id, laboratory_id: merck.id, quantity: rand(100), production_cost: 7,
+                         average_price: 20)
 LaboratoryProduct.create(product_id: fervex.id, laboratory_id: merck.id, quantity: rand(100), production_cost: 4,
                          average_price: 10)
+
+order = Order.create(pharmacy_id: grande_rue.id, laboratory_id: pfizer.id, product_id: doliprane.id,
+                     price: 4, quantity: 6)
+order = Order.create(pharmacy_id: perrache.id, laboratory_id: merck.id, product_id: fervex.id,
+                     price: 4, quantity: 6)
 
 PharmacyProduct.create(product_id: fervex.id, pharmacy_id: grande_rue.id, quantity: 50)
 PharmacyProduct.create(product_id: doliprane.id, pharmacy_id: perrache.id, quantity: 100)
