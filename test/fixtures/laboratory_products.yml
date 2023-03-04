@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  laboratory: one
+  product: one
+  quantity: 1
+  production_cost: 1
+  average_price: 1
+
+two:
+  laboratory: two
+  product: two
+  quantity: 1
+  production_cost: 1
+  average_price: 1
