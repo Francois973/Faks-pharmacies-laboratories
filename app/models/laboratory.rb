@@ -26,7 +26,7 @@ class Laboratory < ApplicationRecord
       }
     end
     ap cities
-    @most_succes_pharmacy_from_laboratory ||= pharmacies
+    @most_succes_city_from_laboratory ||= pharmacies
   end
 
   def most_succes_pharmacy_from_laboratory
