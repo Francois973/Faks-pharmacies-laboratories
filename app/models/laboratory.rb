@@ -8,12 +8,6 @@ class Laboratory < ApplicationRecord
   validates :name, presence: true
 
   def most_succes_city_from_laboratory
-    @most_succes_city_from_laboratory ||= orders.group_by(&:pharmacy).sort_by do |group|
-                                            group[1].count
-                                          end.map { |city| city[0].city }.first(3)
-  end
-
-  def most_succes_city_from_laboratory
     cities = {
       cities: []
     }
